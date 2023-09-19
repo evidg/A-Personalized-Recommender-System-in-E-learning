@@ -1,4 +1,4 @@
-# Recommender-System-in-E-learning
+# A Personalised Recommender-System-in-E-learning
 Diploma Thesis project conducted during my studies at Computer Engineering & Informatics Department in Patras, Greece (2022).
 
 # Description
