@@ -1,0 +1,24 @@
+body {
+margin:0px;
+padding:0px;
+}
+
+.mymenu {
+	background-color:#eee;
+	border-radius:0px;
+	border: none;
+	color:black;
+	margin-bottom:0px;
+}
+
+.mymenu a{
+color:black !important;
+}
+
+footer {
+	background: #eee;
+	padding:40px;
+	text-align:center;
+	width:100%;
+	margin-top:40px;
+}
