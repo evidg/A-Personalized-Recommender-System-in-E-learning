@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Recommendation System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href="/css/my.css">
+  <script src="/js/my.js"></script>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-inverse mymenu">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">E-Learning Recommend</a>
+    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+{% if menu=="" %}
+  
+
+
+      <ul class="nav navbar-nav">
+        
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+  
+  
+  
+{% endif %}
+
+
+	{% if menu=="admin" %}
+	 
+      <ul class="nav navbar-nav">
+        <li><a href="/main">Main</a></li>
+		
+		 <li><a href="/myrec">My URLs</a></li>
+	    <li><a href="/lessons">Lessons</a></li>
+		 <li><a href="/recom2">Recommends</a></li>
+		<li><a href="/ins">Insert New Recommend</a></li>
+		<li><a href="/users">Users</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/profile"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>  
+	
+
+{% endif %}
+{% if menu=="student" %}
+	 
+      <ul class="nav navbar-nav">
+	    <li><a href="/main">Main</a></li>
+        <li><a href="/myrec">My URLs</a></li>
+		
+	    <li><a href="/recom2">Recommend URLs</a></li>
+		<li><a href="/ins">Insert New Recommend</a></li>
+		
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/profile"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>  
+	
+
+{% endif %}
+{% if menu=="teacher" %}
+	 
+      <ul class="nav navbar-nav">
+        <li><a href="/main">Main</a></li>
+		<li><a href="/myrec">My URLs</a></li>
+		
+	    <li><a href="/recom2">Recommend URLs</a></li>
+		<li><a href="/ins">Insert New Recommend</a></li>
+		
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/profile"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>  
+	
+
+{% endif %}
+
+
+
+
+  </div>
+  </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+  <h1>Content Recommendation System </h1>
+  <p>Smart search system helps visitors quickly find the content for every lesson they are looking for. </p>
+</div>
+<div class=container>
+{%block content%}
+
+{% endblock %}
+</div>
+<footer>
+<b>Copyright &copy; Gatou Evi - University of Patras </b>
+</footer>
+</body>
+</html>
